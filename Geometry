@@ -1,0 +1,39 @@
+package geom;
+public class Geom {
+    public static void main(String[] args) {
+        
+        int side = 7;
+        int area = side * side;
+        System.out.println(area);
+        areaOfSquare(side);
+        areaOfSquare(11);
+        areaOfSquare(16);
+        areaOfRectangle(5, 8);
+        areaOfTriangle(4, 6);
+        perimOfSquare(5);
+        perimOfRectangle(3, 8);
+    }
+    
+    public static void areaOfSquare(int side) {
+        int area = side * side;
+        System.out.println(area);
+        
+    }
+    public static void areaOfRectangle(int width,int height) {
+      
+    int area = width * height;
+    System.out.println("areaOfRectangle = " + area);
+ }
+   public static void areaOfTriangle(int base,int height) {
+       double area = base * height/2.0;
+       System.out.println("areaOfTriangle = " + area);
+   }
+   public static void perimOfSquare(int side) {
+       int area = side + side + side + side;
+       System.out.println("perimOfSquare = " + area);
+   }
+   public static void perimOfRectangle(int side, int width) {
+       int area = side + side + width + width;
+       System.out.println("perimOfRectangle = " + area);
+   }
+}
